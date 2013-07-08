@@ -1,0 +1,9 @@
+#graphic-container #chart {
+  width:100%;
+}
+
+#graphic-container g {
+	fill:#EEE;
+	stroke:#FFF;
+	stroke-width:1px;
+}
