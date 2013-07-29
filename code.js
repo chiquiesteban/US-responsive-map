@@ -5,7 +5,6 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 $(document).ready(function(){
 
 if(isFirefox == true) {
-	console.log("Firefox");
 	var mysvg = document.getElementById("svg");
 	var mysvgw = mysvg.getAttributeNS(null,'width')
 	mysvg.getAttributeNS('height', mysvgw*0.618);
@@ -34,7 +33,6 @@ if(isFirefox == true) {
 	   };
 
 } else {
-	console.log("NoFirefox");
 	$("#svg").height($("#svg").width()*0.618)
     $(".state").mouseover( function(){
     	thissvg = $(event.target).parent();
